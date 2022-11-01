@@ -22,10 +22,31 @@
                     <i class="fas fa-redo"></i> Làm mới
                 </button>
 
+                
+
+                <!-- <div v-if="activeContact">
+                    
+                    <ContactCard :contact="activeContact"/>
+                    <router-link
+                        :to="{
+                                name: 'contact.add',
+                        }"
+                    >
+                    <button class="btn btn-sm btn-success" @click="goToAddContact">
+                        <i class="fas fa-plus"></i> Thêm mới
+
+                    </button>
+                        
+                    </router-link>
+                </div> -->
+
+                
                 <button class="btn btn-sm btn-success" @click="goToAddContact">
                     <i class="fas fa-plus"></i> Thêm mới
 
                 </button>
+
+
 
                 <button
                     class="btn btn-sm btn-danger"
@@ -64,6 +85,9 @@ import ContactCard from "@/components/ContactCard.vue";
 import InputSearch from "@/components/InputSearch.vue";
 import ContactList from "@/components/ContactList.vue";
 import ContactService from "@/services/contact.service";
+
+
+
 
 export default {
     components: {
